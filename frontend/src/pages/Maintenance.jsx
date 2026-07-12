@@ -34,7 +34,7 @@ const Maintenance = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={px-4 py-2 rounded ${activeTab === tab ? 'bg-secondary' : 'bg-gray-700'}}
+            className={'px-4 py-2 rounded ${activeTab === tab ? 'bg-secondary' : 'bg-gray-700'}'}
           >
             {tab}
           </button>
