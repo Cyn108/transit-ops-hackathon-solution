@@ -145,7 +145,7 @@ const Reports = () => {
                 <td className="p-4">
                   <div className="flex items-center">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className={'text-xl ${i < Math.floor(driver.rating) ? 'text-yellow-400' : 'text-gray-500'}'}>★</span>
+                      <span key={i} className={`text-xl ${i < Math.floor(driver.rating) ? 'text-yellow-400' : 'text-gray-500'}`}>★</span>
                     ))}
                   </div>
                 </td>
