@@ -73,5 +73,5 @@ def get_expenses():
         'description': e.description, 'amount': e.amount, 'status': e.status
     } for e in expenses])
 
-if __name__ == '_main_':
+if __name__ == '__main__':
     app.run(debug=True, port=5000)
