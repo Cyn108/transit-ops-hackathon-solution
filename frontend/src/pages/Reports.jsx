@@ -100,7 +100,7 @@ const Reports = () => {
           <PieChart width={400} height={300}>
             <Pie data={expenseBreakdown} cx="50%" cy="50%" outerRadius={80} fill="#8884d8" dataKey="value" label>
               {expenseBreakdown.map((entry, index) => (
-                <Cell key={cell-${index}} fill={COLORS[index % COLORS.length]} />
+                <Cell key={'cell-${index}'} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>
             <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none' }} />
@@ -145,7 +145,7 @@ const Reports = () => {
                 <td className="p-4">
                   <div className="flex items-center">
                     {[...Array(5)].map((_, i) => (
-                      <span key={i} className={text-xl ${i < Math.floor(driver.rating) ? 'text-yellow-400' : 'text-gray-500'}}>★</span>
+                      <span key={i} className={'text-xl ${i < Math.floor(driver.rating) ? 'text-yellow-400' : 'text-gray-500'}'}>★</span>
                     ))}
                   </div>
                 </td>
