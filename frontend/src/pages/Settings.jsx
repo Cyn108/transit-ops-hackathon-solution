@@ -31,7 +31,7 @@ const Settings = () => {
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={px-4 py-2 rounded ${activeTab === tab ? 'bg-secondary' : 'bg-gray-700'}}
+            className={'px-4 py-2 rounded ${activeTab === tab ? 'bg-secondary' : 'bg-gray-700'}'}
           >
             {tab}
           </button>
@@ -68,7 +68,7 @@ const Settings = () => {
                     <td className="p-4">{user.email}</td>
                     <td className="p-4">{user.role}</td>
                     <td className="p-4">
-                      <span className={px-2 py-1 rounded-full text-xs ${user.status === 'Active' ? 'bg-green-500' : 'bg-red-500'}}>
+                      <span className={'px-2 py-1 rounded-full text-xs ${user.status === 'Active' ? 'bg-green-500' : 'bg-red-500'}'}>
                         {user.status}
                       </span>
                     </td>
