@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-app = Flask(_name_)
+app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///transportops.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY')
@@ -73,5 +73,5 @@ def get_expenses():
         'description': e.description, 'amount': e.amount, 'status': e.status
     } for e in expenses])
 
-if _name_ == '_main_':
+if __name__ == '_main_':
     app.run(debug=True, port=5000)
