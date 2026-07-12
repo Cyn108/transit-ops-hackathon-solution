@@ -97,7 +97,7 @@ const Dashboard = () => {
           <PieChart width={400} height={200}>
             <Pie data={tripStatus} cx="50%" cy="50%" outerRadius={60} fill="#8884d8" dataKey="value" label>
               {tripStatus.map((entry, index) => (
-                <Cell key={cell-${index}} fill={COLORS[index % COLORS.length]} />
+                <Cell key={`cell-${index}} fill={COLORS[index % COLORS.length]`} />
               ))}
             </Pie>
             <Tooltip contentStyle={{ backgroundColor: '#1f2937', border: 'none' }} />
