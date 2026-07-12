@@ -72,6 +72,10 @@ def get_expenses():
         'id': e.id, 'date': e.date, 'trip_id': e.trip_id, 'type': e.type,
         'description': e.description, 'amount': e.amount, 'status': e.status
     } for e in expenses])
+    
+@app.route('/')
+def home():
+    return jsonify({"message": "Backend is running successfully!"})
 
 if __name__ == '__main__':
     
